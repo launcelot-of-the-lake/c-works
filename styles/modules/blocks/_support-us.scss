@@ -1,0 +1,50 @@
+.support-us {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include breakpoint("mobile") {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 90px;
+
+    @include breakpoint("tablet") {
+      margin-bottom: 80px;
+    }
+
+    @include breakpoint("mobile") {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__link {
+    margin-bottom: 50px;
+
+    @include breakpoint("tablet") {
+      margin-bottom: 40px;
+    }
+
+    @include breakpoint("mobile") {
+      display: flex;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 32px;
+    line-height: 40px;
+
+    @include breakpoint("tablet") {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @include breakpoint("mobile") {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}

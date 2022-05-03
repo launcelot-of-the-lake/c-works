@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ремонт Плёночных фотоаппаратов</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="page">
+  <header class="header container">
+    <a class="header__logo logo" href="/">C-Works</a>
+    <p class="badge">мы открылись</p>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1 class="hero__title">
+        Ремонт
+        <span class="hero__subtitle">Плёночных фотоаппаратов</span>
+      </h1>
+
+      <form class="hero__form callback-form" action="/">
+        <input class="callback-form__input" type="email">
+        <button class="callback-form__submit">
+          <span class="callback-form__submit-text">Отремонтируйте камеру</span>
+          <img class="callback-form__submit-icon" src="images/icons/peace.png" alt="Символ мира">
+        </button>
+        <p class="callback-form__help callback-form__help_shift">Напишите нам и мы свяжемся с вами.</p>
+      </form>
+    </section>
+
+    <div class="camera-photos">
+      <img class="camera-photos__item" src="images/camera-1.jpg" alt="Камера">
+      <span class="camera-photos__item"></span>
+      <span class="camera-photos__item"></span>
+      <img class="camera-photos__item" src="images/camera-2.jpg" alt="Камера">
+    </div>
+
+    <section class="services container">
+      <p class="services__description">Мы ремонтируем плёночные фотоаппараты. Полносстью механические камеры, относительно современные камеры на&nbsp;электронике, проводим CLA камер, принимаем в зачёт оплаты сломаные тушки и&nbsp;объективы.</p>
+
+      <h2 class="services__title title">
+        Для энтузиастов, от энтузиастов
+        <img class="title__icon" src="images/icons/finger.png" alt="Палец в бок">
+      </h2>
+
+      <div class="services__list">
+        <article class="service-card">
+          <a class="service-card__link" href="#">
+            <span class="service-card__type">CLA</span>
+            <h3 class="service-card__title">Чистка камер.</h3>
+            <p class="service-card__description">Замена уплотнителей, дампфера зеркала, смазка механизмов, юстировка.</p>
+            <span class="service-card__price">от 2000₽</span>
+          </a>
+        </article>
+
+        <article class="service-card">
+          <a class="service-card__link" href="#">
+            <span class="service-card__type">Ремонт</span>
+            <h3 class="service-card__title">Ремонт камер.</h3>
+            <p class="service-card__description">Ремонт механизмов, замена деталей, пайка электроники, адаптация питания.</p>
+            <span class="service-card__price">от 2500₽</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="guarantee container">
+      <h2 class="guarantee__title title">
+        Полная гарантия
+        <img class="title__icon" src="images/icons/lightning.png" alt="Молния">
+      </h2>
+
+      <ul class="guarantee__list">
+        <li class="guarantee__item">
+          <a class="guarantee__item-link" href="#">
+            <h3 class="guarantee__item-title">CLA</h3>
+            <p class="guarantee__item-description">После CLA мы даем гарантию на 1 год, в случае беды мы заново обслужим вашу камеру.</p>
+          </a>
+        </li>
+        <li class="guarantee__item">
+          <a class="guarantee__item-link" href="#">
+            <h3 class="guarantee__item-title">Ремонт</h3>
+            <p class="guarantee__item-description">После ремонта мы даем гарантию на 3 месяца или 6 месяцев.</p>
+          </a>
+        </li>
+        <li class="guarantee__item">
+          <a class="guarantee__item-link" href="#">
+            <h3 class="guarantee__item-title">Пайка и адаптация</h3>
+            <p class="guarantee__item-description">После пайки и адаптации питания мы даем гарантию
+              на 1 год.</p>
+          </a>
+        </li>
+        <li class="guarantee__item">
+          <a class="guarantee__item-link" href="#">
+            <h3 class="guarantee__item-title">Осмотр</h3>
+            <p class="guarantee__item-description">Осмотр камеры — бесплатен, если мы что-то сломаем, поменяем деталь сами.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="support-us container">
+      <h2 class="support-us__title title">
+        Поддержите нас
+        <img class="title__icon" src="images/icons/handshake.png" alt="Рукопожатие">
+      </h2>
+
+      <a class="support-us__link button" href="#callback-form">Напишите нам если хотите помочь!</a>
+
+      <p class="support-us__description">Ещё вы сможете безвозмездно поддержать нас на Patreon, пока мы ещё создали аккаунт, но как только это сделаем, сообщим вам.</p>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer__top">
+      <a class="logo" href="/">C-Works</a>
+      <p class="badge">мы открылись</p>
+    </div>
+
+    <div class="footer__bottom">
+      <form class="callback-form" id="callback-form" action="/">
+        <input class="callback-form__input" type="email">
+        <button class="callback-form__submit">
+          <span class="callback-form__submit-text">Отремонтируйте камеру</span>
+          <img class="callback-form__submit-icon" src="images/icons/peace.png" alt="Символ мира">
+        </button>
+        <p class="callback-form__help">Напишите нам и мы свяжемся с вами.</p>
+      </form>
+
+      <p class="footer__copy">© C-Works, 2021.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

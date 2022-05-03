@@ -1,0 +1,11 @@
+.logo {
+  color: var(--lightColor);
+  font-size: 22px;
+  line-height: 30px;
+  text-decoration: none;
+
+  @include breakpoint("mobile") {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

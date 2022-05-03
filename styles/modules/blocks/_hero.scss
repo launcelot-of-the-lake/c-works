@@ -1,0 +1,57 @@
+.hero {
+  padding-bottom: 60px;
+
+  @include breakpoint("tablet") {
+    padding-bottom: 32px;
+  }
+
+  @include breakpoint("mobile") {
+    padding-bottom: 20px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 230px;
+    color: var(--lightColor);
+    font-size: 112px;
+    font-weight: 400;
+    line-height: 112px;
+
+    @include breakpoint("tablet") {
+      margin-bottom: 470px;
+      font-size: 70px;
+      line-height: 90px;
+    }
+
+    @include breakpoint("mobile") {
+      margin-bottom: 260px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    margin-top: 20px;
+    font-size: 80px;
+    line-height: 70px;
+
+    @include breakpoint("tablet") {
+      margin-top: 0;
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    @include breakpoint("mobile") {
+      margin-top: 10px;
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+
+  &__form {
+    @include breakpoint("tablet") {
+      max-width: unset;
+    }
+  }
+}

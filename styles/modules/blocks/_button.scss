@@ -1,0 +1,24 @@
+.button {
+  display: inline-flex;
+  padding: 13px 30px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.375px;
+  text-decoration: none;
+  background-color: #47474C;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: #232327;
+  }
+
+  @include breakpoint("mobile") {
+    padding: 16px 30px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
