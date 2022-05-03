@@ -10,6 +10,7 @@
     color: var(--lightColor);
     font-family: inherit;
     font-size: 14px;
+    line-height: 24px;
     background-color: rgba(142, 142, 152, 0.2);
     border-radius: 8px 0 0 8px;
     border: none;
@@ -20,14 +21,25 @@
       background-color: rgba(142, 142, 152, 0.3);
       outline: none;
     }
+
+    &:disabled {
+      background-color: rgba(142, 142, 152, 0.2);
+    }
   }
 
   &__submit {
     display: flex;
     align-items: center;
-    gap: 10px;
     padding: 13px 16px;
+    padding-right: 37px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.375px;
     background-color: #47474C;
+    background-image: url(../../../images/icons/peace.png);
+    background-repeat: no-repeat;
+    background-position: right 16px top 16px;
     border: none;
     border-radius: 0 8px 8px 0;
     cursor: pointer;
@@ -37,18 +49,23 @@
       background-color: #232327;
     }
 
-    &-text {
-      color: #fff;
-      font-size: 14px;
-      line-height: 24px;
-      letter-spacing: 0.375px;
+    &:disabled {
+      background-color: #47474C;
+      cursor: auto;
+    }
+
+    &_submitted {
+      background-image: none;
+      padding-right: 16px;
     }
 
     @include breakpoint("mobile") {
       padding: 18px 20px;
+      font-size: 0;
+      height: 50px;
 
-      &-text {
-        display: none;
+      &_submitted {
+        background-image: url(../../../images/icons/cool.svg);
       }
     }
   }

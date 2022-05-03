@@ -6,14 +6,8 @@ function disabledFormElements(elements) {
 
 function changeButtonText(button, text) {
   if (!button) return;
-
-  const template = `
-    <span class="callback-form__submit-text">
-      ${text}
-    </span>
-  `;
-
-  button.innerHTML = template;
+  button.classList.add('callback-form__submit_submitted');
+  button.textContent = text;
 }
 
 function submitCallbackForm(evt) {
