@@ -1,0 +1,46 @@
+.services {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include breakpoint("mobile") {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 60px;
+    font-size: 32px;
+    line-height: 40px;
+
+    @include breakpoint("tablet") {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @include breakpoint("mobile") {
+      margin-bottom: 20px;
+      padding-right: 5px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 120px;
+
+    @include breakpoint("mobile") {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    @include breakpoint("tablet") {
+      grid-template-columns: 1fr;
+    }
+  }
+}

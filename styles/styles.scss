@@ -1,0 +1,27 @@
+@import 'modules/global';
+@import 'modules/variables';
+@import 'modules/mixins';
+
+@import 'modules/blocks/page';
+@import 'modules/blocks/container';
+
+@import 'modules/blocks/logo';
+@import 'modules/blocks/badge';
+@import 'modules/blocks/title';
+@import 'modules/blocks/button';
+
+@import 'modules/blocks/header';
+
+@import 'modules/blocks/callback-form';
+@import 'modules/blocks/hero';
+
+@import 'modules/blocks/camera-photos';
+
+@import 'modules/blocks/service-card';
+@import 'modules/blocks/services';
+
+@import 'modules/blocks/guarantee';
+
+@import 'modules/blocks/support-us';
+
+@import 'modules/blocks/footer';

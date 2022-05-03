@@ -1,0 +1,14 @@
+$dark: #000;
+$light: #fff;
+$gray: #8E8E98;
+
+$points: (
+  "tablet": 1439px,
+  "mobile": 767px
+);
+
+:root {
+  --bgColor: #{$dark};
+  --lightColor: #{$light};
+  --textColor: #{$gray};
+}

@@ -1,0 +1,70 @@
+.callback-form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 569px;
+  width: 100%;
+
+  &__input {
+    flex-grow: 1;
+    padding: 13px 16px;
+    color: var(--lightColor);
+    font-family: inherit;
+    font-size: 14px;
+    background-color: rgba(142, 142, 152, 0.2);
+    border-radius: 8px 0 0 8px;
+    border: none;
+  }
+
+  &__submit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 16px;
+    background-color: #47474C;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: #232327;
+    }
+
+    &-text {
+      color: #fff;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.375px;
+    }
+
+    @include breakpoint("mobile") {
+      padding: 18px 20px;
+
+      &-text {
+        display: none;
+      }
+    }
+  }
+
+  &__help {
+    margin: 0;
+    margin-top: 18px;
+    width: 100%;
+    color: #47474C;
+    font-size: 12px;
+    line-height: 18px;
+
+    &_shift {
+      margin-left: 10px;
+      margin-top: 12px;
+    }
+
+    @include breakpoint("tablet") {
+      margin-left: 0;
+    }
+
+    @include breakpoint("mobile") {
+      margin-top: 10px;
+    }
+  }
+}
