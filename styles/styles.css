@@ -365,6 +365,8 @@ html {
 
 .page {
   margin: 0;
+  max-width: 100%;
+  min-width: 320px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   color: var(--textColor);
   background-color: var(--bgColor);
