@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ремонт Плёночных фотоаппаратов</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="page">
@@ -21,29 +20,30 @@
         <span class="hero__subtitle">Плёночных фотоаппаратов</span>
       </h1>
 
-      <form class="hero__form callback-form" action="/">
-        <input class="callback-form__input" type="email">
-        <button class="callback-form__submit">
-          <span class="callback-form__submit-text">Отремонтируйте камеру</span>
-          <img class="callback-form__submit-icon" src="images/icons/peace.png" alt="Символ мира">
-        </button>
-        <p class="callback-form__help callback-form__help_shift">Напишите нам и мы свяжемся с вами.</p>
+      <form class="hero__form callback-form" name="hero-callback" action="/">
+        <input class="callback-form__input" name="email" type="email" required>
+        <button class="callback-form__submit" type="submit">Отремонтируйте камеру</button>
+        <p class="callback-form__help callback-form__help_shift_left">Напишите нам и мы свяжемся с вами.</p>
       </form>
     </section>
 
-    <div class="camera-photos">
-      <img class="camera-photos__item" src="images/camera-1.jpg" alt="Камера">
-      <span class="camera-photos__item"></span>
-      <span class="camera-photos__item"></span>
-      <img class="camera-photos__item" src="images/camera-2.jpg" alt="Камера">
-    </div>
+    <section class="camera-photos">
+      <h2 class="camera-photos__title">Изображения плёночныx фотоаппаратов</h2>
+
+      <div class="camera-photos__list">
+        <img class="camera-photos__item" src="images/camera-1.jpg" alt="Камера">
+        <span class="camera-photos__item"></span>
+        <span class="camera-photos__item"></span>
+        <img class="camera-photos__item" src="images/camera-2.jpg" alt="Камера">
+      </div>
+    </section>
 
     <section class="services container">
       <p class="services__description">Мы ремонтируем плёночные фотоаппараты. Полносстью механические камеры, относительно современные камеры на&nbsp;электронике, проводим CLA камер, принимаем в зачёт оплаты сломаные тушки и&nbsp;объективы.</p>
 
       <h2 class="services__title title">
         Для энтузиастов, от энтузиастов
-        <img class="title__icon" src="images/icons/finger.png" alt="Палец в бок">
+        <img class="title__icon" src="images/icons/finger.svg" alt="Палец в бок">
       </h2>
 
       <div class="services__list">
@@ -70,7 +70,7 @@
     <section class="guarantee container">
       <h2 class="guarantee__title title">
         Полная гарантия
-        <img class="title__icon" src="images/icons/lightning.png" alt="Молния">
+        <img class="title__icon" src="images/icons/lightning.svg" alt="Молния">
       </h2>
 
       <ul class="guarantee__list">
@@ -105,7 +105,7 @@
     <section class="support-us container">
       <h2 class="support-us__title title">
         Поддержите нас
-        <img class="title__icon" src="images/icons/handshake.png" alt="Рукопожатие">
+        <img class="title__icon" src="images/icons/handshake.svg" alt="Рукопожатие">
       </h2>
 
       <a class="support-us__link button" href="#callback-form">Напишите нам если хотите помочь!</a>
@@ -121,12 +121,9 @@
     </div>
 
     <div class="footer__bottom">
-      <form class="callback-form" id="callback-form" action="/">
-        <input class="callback-form__input" type="email">
-        <button class="callback-form__submit">
-          <span class="callback-form__submit-text">Отремонтируйте камеру</span>
-          <img class="callback-form__submit-icon" src="images/icons/peace.png" alt="Символ мира">
-        </button>
+      <form class="footer__callback callback-form" name="footer-callback" id="callback-form" action="/">
+        <input class="callback-form__input" name="email" type="email" required>
+        <button class="callback-form__submit" type="submit">Отремонтируйте камеру</button>
         <p class="callback-form__help">Напишите нам и мы свяжемся с вами.</p>
       </form>
 
